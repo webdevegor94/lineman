@@ -1,4 +1,9 @@
-export const modalHandler = (selector, display, modalMeta) => {
+const defaultModalMeta = {
+    modalSelector: '.modal-callback',
+    modalOverlaySelector: '.modal-overlay'
+}
+
+export const modalHandler = (selector, display, modalMeta = defaultModalMeta) => {
     const button = document.querySelector(selector)
 
     button.addEventListener('click', (e) => {
@@ -12,7 +17,7 @@ export const modalHandler = (selector, display, modalMeta) => {
     })
 }
 
-export const modalHandlers = (selector, display, modalMeta) => {
+export const modalHandlers = (selector, display, modalMeta = defaultModalMeta) => {
     const buttons = document.querySelectorAll(selector)
     buttons.forEach((button) => {
         button.addEventListener('click', (e) => {

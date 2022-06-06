@@ -7,15 +7,12 @@ import { scrollUp } from "./modules/scrollUp"
 
 
 export const main = () => {
-    const defaultModalMeta = {
-        modalSelector: '.modal-callback',
-        modalOverlaySelector: '.modal-overlay'
-    }
+
     // modalHandler('.mobile-menu .callback-btn', 'block')
-    modalHandler('.header .callback-btn', 'block', defaultModalMeta)
-    modalHandler('.modal-close', 'none', defaultModalMeta)
-    modalHandler('.quest-section .button-services', 'block', defaultModalMeta)
-    modalHandlers('.services-carousel .element', 'block', defaultModalMeta)
+    modalHandler('.header .callback-btn', 'block')
+    modalHandler('.modal-close', 'none')
+    modalHandler('.quest-section .button-services', 'block')
+    modalHandlers('.services-carousel .element', 'block')
     menu()
     forms()
     // sendForm()
