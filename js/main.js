@@ -1,4 +1,5 @@
 import { modalHandler } from "./modules/modalHandler"
+import { menu } from "./modules/menu"
 
 export const main = () => {
     // modalHandler('.mobile-menu .callback-btn', 'block')
@@ -16,3 +17,5 @@ export const main = () => {
     })
 
 }
+
+menu()
