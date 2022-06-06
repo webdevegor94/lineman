@@ -3,6 +3,7 @@ import { menu } from "./modules/menu"
 import { forms } from "./modules/forms"
 // import { sendForm } from "./modules/sendForm"
 import { slider } from "./modules/slider"
+import { scrollUp } from "./modules/scrollUp"
 
 export const main = () => {
     // modalHandler('.mobile-menu .callback-btn', 'block')
@@ -23,4 +24,5 @@ export const main = () => {
     forms()
     // sendForm()
     slider()
+    scrollUp()
 }

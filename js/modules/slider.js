@@ -1,22 +1,26 @@
 
 export const slider = () => {
-    const sliderBlock = document.querySelector('.top-slider')
-    console.log(sliderBlock.children);
+    let sliderBlock = document.querySelector('.top-slider')
 
     for (const element of sliderBlock.children) {
         element.querySelector('.table').classList.add('active')
     }
 
     const newSlide = () => {
-        const sliders = [...sliderBlock.children]
-        sliderBlock.removeChild(sliders[0])
-        sliderBlock.appendChild(sliders[0])
+        let copySliderBlock = [...sliderBlock.children];
 
+        sliderBlock.replaceChildren(
+            ...[
+                ...copySliderBlock.slice(1),
+                ...copySliderBlock.slice(0, 1)
+            ]
+        )
     }
 
-    setInterval(() => {
-        newSlide()
-    }, 3000)
+    let timerId = setTimeout(function tick() {
+        newSlide();
+        timerId = setTimeout(tick, 3000);
+    }, 3000);
 
 }
 
