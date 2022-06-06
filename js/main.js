@@ -16,6 +16,5 @@ export const main = () => {
         modalOverlaySelector: '.modal-overlay'
     })
 
+    menu()
 }
-
-menu()
