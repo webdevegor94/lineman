@@ -4,6 +4,7 @@ import { forms } from "./modules/forms"
 // import { sendForm } from "./modules/sendForm"
 import { slider } from "./modules/slider"
 import { scrollUp } from "./modules/scrollUp"
+import { accordeon } from "./modules/accordeon"
 
 
 export const main = () => {
@@ -18,4 +19,5 @@ export const main = () => {
     // sendForm()
     slider()
     scrollUp()
+    accordeon()
 }
