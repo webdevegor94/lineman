@@ -1,7 +1,7 @@
 import { modalHandler, modalHandlers } from "./modules/modalHandler"
 import { menu } from "./modules/menu"
 import { forms } from "./modules/forms"
-// import { sendForm } from "./modules/sendForm"
+import { sendForm } from "./modules/sendForm"
 import { slider } from "./modules/slider"
 import { scrollUp } from "./modules/scrollUp"
 import { accordeon } from "./modules/accordeon"
@@ -21,6 +21,6 @@ export const main = () => {
     slider()
     scrollUp()
     accordeon()
-    // sendForm()
+    sendForm()
     carousel()
 }
